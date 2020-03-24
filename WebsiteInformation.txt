@@ -1,0 +1,16 @@
+FreeWay Books
+
+A book Publishing adn editing Company designed with HTML, CSS and JavaScript with
+the intention of disseminating information to staff of the company as they work
+remotely in their various countries.
+The features on this site include but not limited to 
+a Nav bar consisting of Homepage, General Information, Managers Portal, About us and 
+Contacts.
+Clicking on General Infor. takes the junior staff and every other persons 
+to the announcement section where they get to known the necessary updates 
+of the company.
+Manager's Portal are strictly for senior staff of the company, they login
+into the portal with their email and password to have access to their 
+official information from their various countries so as to work remotely.
+About Us; This is the contact section of the company.
+ 

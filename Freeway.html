@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Site</title>
+</head>
+
+<style>
+
+#header-wrapper {
+	overflow: hidden;
+    height: 150px;
+    background-color: cadetblue;
+}
+
+#header {
+	width: 1200px;
+	height: 150px;
+	margin: 0 auto;
+    padding: 0px 0px;
+    background-color: cadetblue;
+}
+
+#logo {
+	float: left;
+	width: 310px;
+	height: 150px;
+    padding: 0px 0px 0px 40px;
+    margin-top: 3px;
+}
+
+#logo h1 {
+	padding: 50px 0px 0px 0px;
+/*	text-transform: lowercase;  */
+	letter-spacing: -2px;
+    font-size: 2em;
+    margin-top: auto;
+}
+
+#logo h1 a {
+	text-decoration: none;
+	color: blue;
+}
+
+#menu {
+	float: right;
+	width: 810px;
+	height: 80px;
+	padding: 20px 40px 0px 0px;
+}
+
+
+#menu ul {
+	float: right;
+	margin: 0;
+	padding: 40px 0px 0px 0px;
+    list-style: none;
+    
+}
+
+
+#menu li {
+	float: left;
+}
+
+#menu a {
+	display: block;
+	margin-left: 1px;
+	padding: 7px 20px 7px 20px;
+	letter-spacing: 0px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: blue;
+}
+
+#menu a:hover, #menu .current_page_item a {
+	text-decoration: none;
+	background: #FFFFFF;
+	border-radius: 5px;
+	color: #1f31bb;
+}
+
+
+#page-wrapper{
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    
+
+#menu{
+            
+            width: 100%;
+            position: absolute;
+            text-align: left;
+            margin-top: 90px;
+            
+        }
+
+        #page-wrapper{  
+            margin-top: 80%;
+            width: 100%;
+}
+
+.bg{  
+            
+            width: 100%;
+
+}
+
+
+    }
+
+
+</style>
+
+
+<body>
+    
+    <div id="header-wrapper">
+        <div id="header">
+            <div id="logo">
+                <h1><a href="#">Freeway Limited</a></h1>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li class="current_page_item"><a href="#home" accesskey="1" title="">Homepage</a></li>
+                    <li><a href="#anc" accesskey="2" title="" id="#">General Announcement</a></li>
+                    <li><a href="#" accesskey="3" title="">About Us</a></li>
+                    <li><a href="#man" accesskey="4" title="">Managers Portal</a></li>
+                    <li><a href="#" accesskey="5" title="">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="page-wrapper">
+		<div id="page">
+			<div id="wide-content">
+				<div>
+					<h2  id="home" >Welcome to Freeway Books!</h2>
+                    <p><img src="images/book.jpg" alt="" width="300" height="186" class="alignleft" /> <br>
+                        <strong>Freeway Books </strong> has expressed dissapointment at the cancellation of all stores in 
+                        the country by the federal government due to <strong>Covid-19</strong>
+                        <a href="https://www.worldometers.info/coronavirus/" rel="">More Info on Covid-19</a>.  generally
+                        known as coronavirus but accepted that it was the "right Call" as the government of Nigeria works on 
+                        containment of the coronavirus Outbreak.In Compliance with the directive of our federal government,
+                    Femi Books is temporarily suspending all activities accross the globe. </p>
+					<p>Regards this, we direct all our staff to stay off the company and start working from 
+                        their respective homes. All Staff are to note that the following mechanism has been put in place 
+                    regards this new decision. <ul>
+                        <li>
+                            All Staff are to check the announcement on this site for necessary updates.
+                        </li>
+                        <li>
+                            Managers to log in to the company portal with their provided password for the approved 
+                            projects and waiting projects.
+                        </li>
+                    </ul></p>
+					<p class="button-style"><a href="#">More Details</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+    <div  class="bg">
+        <div  id="man"  class="content">
+      <h2 class="note"  style="color: red;">All senior staff are to fill this form with their valid password.</h2>
+          <form action = "" name = "myForm" onsubmit = "return(validate());">
+            <table cellspacing = "2" cellpadding = "2" border = "1">
+               
+               <tr>
+                  <td align = "right">Name</td>
+                  <td><input type = "text" name = "Name" id="name"   required/></td>
+               </tr>
+               
+               <tr>
+                  <td align = "right">Email</td>
+                  <td><input type = "text" name = "EMail" id="email"/></td>
+               </tr>
+               
+               <tr>
+                  <td align = "right">Zip Code</td>
+                  <td><input type = "text" name = "Zip" required /></td>
+               </tr>
+               
+        
+               <tr>
+                <td align = "right">Password</td>
+                <td><input type = "password" name = "password" id="password"/></td>
+             </tr>
+        
+        
+             <tr>
+                <td align = "right">Position</td>
+                <td>
+                   <select name = "POSITION" id="position">
+                      <option value = "-1" selected>[choose yours]</option>
+                      <option value = "1">MANAGER</option>
+                      <option value = "2">ASSISTANT MANAGER</option>
+                      <option value = "3">DEVELOPER</option>
+                      <option value = "3">SECRETARY</option>
+                      <option value = "3">BRANCH HEAD</option>
+                   </select>
+                </td>
+             </tr>
+        
+        
+               <tr>
+                  <td align = "right">Country</td>
+                  <td>
+                     <select name = "Country" id="country">
+                        <option value = "-1" selected>[choose yours]</option>
+                        <option value = "1">NIGERIA</option>
+                        <option value = "2">DUBAI</option>
+                        <option value = "3">MOROCCO</option>
+                        <option value = "3">TOGO</option>
+                        <option value = "3">CAMEROUN</option>
+                     </select>
+                  </td>
+               </tr>
+               
+               <tr>
+                  <td align = "right"></td>
+                  <td><input style="width: 100px; " type= "submit" value="Sign In" class="button-style" onclick="validate();"></td>
+               </tr>
+               
+            </table>
+         </form>      
+        </div>
+    </div>
+    
+    
+    
+    <script>
+    
+    
+    function validate(){
+        var name = document.getElementById("name").value;
+     
+        var passWord = document.getElementById("password").value;
+    
+     if(document.myForm.POSITION.selectedIndex== ""){
+         alert("please select your position!")
+     }
+    
+        if(document.myForm.Country.selectedIndex==""){
+            alert ("please select a country!");
+            return false;
+        }
+        
+    
+    if(name== null || name== "") {
+        alert("Full name is required!")
+    }    
+        
+    
+    if(passWord== null || passWord== ""){
+        alert("please enter password");
+        return false;
+    }
+    
+    
+    window.open('Manager.html')
+    
+    
+    }
+    </script>
+    
+
+
+
+
+
+
+
+    <div  class="" id="anc"   >
+
+        <ul class="style1">
+        <li class="first">
+            <h3>Announcement 1</h3>
+            <p>Ut vel nisl tristique justo ornare iaculis. Suspendisse suscipit, <br> orci ac interdum viverra, nulla orci facilisis mi, a ultrices mi lectus vitae felis. <br> Morbi suscipit adipiscing orci et blandit. Morbi a nulla ut tellus blandit placerat a quis eros.</p>
+            <p><a href="#" class="button-style">Read More</a></p>
+        </li>
+        <li>
+            <h3>Announcement 2</h3>
+            <p>Ut vel nisl tristique justo ornare iaculis. Suspendisse suscipit, <br> orci ac interdum viverra, nulla orci facilisis mi, a ultrices mi lectus vitae felis. <br> Morbi suscipit adipiscing orci et blandit. Morbi a nulla ut tellus blandit placerat a quis eros.</p>
+            <p><a href="#" class="button-style">Read More</a></p>
+        </li>
+
+        <li>
+            <h3>Announcement 3  </h3>
+            <p>Ut vel nisl tristique justo ornare iaculis. Suspendisse suscipit, orci ac interdum viverra, <br> nulla orci facilisis mi, a ultrices mi lectus vitae felis. <br> Morbi suscipit adipiscing orci et blandit. Morbi a nulla ut tellus blandit placerat a quis eros.</p>
+            <p><a href="#" class="button-style">Read More</a></p>
+        </li>
+        </ul>
+    </div>
+        
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
